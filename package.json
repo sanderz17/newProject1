@@ -4,7 +4,8 @@
   "description": "Wookie books",
   "main": "server.js",
   "scripts": {
-    "test": "npm test"
+    "test": "mocha",
+    "start": "env-cmd nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,16 @@
   },
   "homepage": "https://github.com/sanderz17/newProject1#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "env-cmd": "^10.1.0",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "mocha": "^2.4.5"
   }
 }
