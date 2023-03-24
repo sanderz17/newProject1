@@ -1,0 +1,252 @@
+{
+	"info": {
+		"_postman_id": "75867320-d7c1-4463-9942-ec8d14a0fb96",
+		"name": "newProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/books/list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/books/list?title=Harry Potter and the chamber of secrets&description=harry potter universe&price=40&author=J.K. Rowling",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"list"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "Harry Potter and the chamber of secrets"
+						},
+						{
+							"key": "description",
+							"value": "harry potter universe"
+						},
+						{
+							"key": "price",
+							"value": "40"
+						},
+						{
+							"key": "author",
+							"value": "J.K. Rowling"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\" : \"jt@wokkie.com\",\n    \"password\" : \"password\",\n    \"first_name\" : \"Jeanette\",\n    \"last_name\" : \"Threlfall\",\n    \"author_pseudonym\" : \"J. T.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"jkrowling@wokkie.com\",\n    \"password\" : \"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/books",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"Harry Potter and the sorcers stone\",\n    \"description\" : \"harry potter universe\",\n    \"author_id\" : \"1\",\n    \"coverImage\" : \"\",\n    \"price\" : \"100\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/books/2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/books",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"Harry Potter and the goblit of fire\",\n    \"description\" : \"harry potter universe\",\n    \"author_id\" : \"1\",\n    \"coverImage\" : \"\",\n    \"price\" : \"300\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/books",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books"
+					]
+				},
+				"description": "add book"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/books/book_id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"Harry Potter and the sorcers stone\",\n    \"description\" : \"harry potter universe\",\n    \"author_id\" : \"1\",\n    \"coverImage\" : \"\",\n    \"price\" : \"100\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/books/2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"2"
+					]
+				},
+				"description": "edit book"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/books/book_id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/books/2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"2"
+					]
+				},
+				"description": "get book "
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/books/book_id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/books/2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"2"
+					]
+				},
+				"description": "delete"
+			},
+			"response": []
+		}
+	]
+}
